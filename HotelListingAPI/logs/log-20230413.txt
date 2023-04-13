@@ -1,0 +1,25 @@
+2023-04-13 11:41:59.100 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 11:41:59.152 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 11:41:59.155 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 11:41:59.156 +04:00 [INF] Hosting environment: Development
+2023-04-13 11:41:59.157 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 11:44:37.619 +04:00 [INF] HTTP POST /api/Countries responded 201 in 3835.0387 ms
+2023-04-13 11:44:51.838 +04:00 [INF] HTTP GET /api/Countries/4 responded 200 in 471.0874 ms
+2023-04-13 11:44:56.001 +04:00 [INF] HTTP GET /api/Countries/2 responded 200 in 23.3896 ms
+2023-04-13 11:45:33.713 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 16.6919 ms
+2023-04-13 11:45:47.957 +04:00 [INF] HTTP POST /api/Countries responded 400 in 26.1535 ms
+2023-04-13 13:06:48.976 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 13:06:49.028 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 13:06:49.033 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 13:06:49.035 +04:00 [INF] Hosting environment: Development
+2023-04-13 13:06:49.043 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 13:07:00.413 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4248.7103 ms
+2023-04-13 15:01:39.187 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 15:01:39.239 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 15:01:39.242 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 15:01:39.244 +04:00 [INF] Hosting environment: Development
+2023-04-13 15:01:39.245 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 15:01:57.385 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4257.3211 ms
+2023-04-13 15:02:25.584 +04:00 [INF] HTTP PUT /api/Countries/3 responded 400 in 56.3961 ms
+2023-04-13 15:02:38.445 +04:00 [INF] HTTP PUT /api/Countries/3 responded 204 in 151.9710 ms
+2023-04-13 15:02:46.109 +04:00 [INF] HTTP GET /api/Countries responded 200 in 60.5248 ms
