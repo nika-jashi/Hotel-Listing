@@ -1,5 +1,4 @@
-﻿using HotelListingAPI.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography.X509Certificates;
 
 namespace HotelListingAPI.Data

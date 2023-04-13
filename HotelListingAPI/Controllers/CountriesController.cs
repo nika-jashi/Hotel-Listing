@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListingAPI.Data;
-using HotelListingAPI.Models;
+using HotelListingAPI.Models.Country;
+using AutoMapper;
 
 namespace HotelListingAPI.Controllers
 {
@@ -15,32 +16,39 @@ namespace HotelListingAPI.Controllers
     public class CountriesController : ControllerBase
     {
         private readonly HotelListingDbContext _context;
-
-        public CountriesController(HotelListingDbContext context)
+        private readonly IMapper _mapper;
+        public CountriesController(HotelListingDbContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: api/Countries
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Country>>> GetCountries()
+        public async Task<ActionResult<IEnumerable<GetCountry>>> GetCountries()
         {
             var countries = await _context.Countries.ToListAsync();
-            return Ok(countries);
+            var records = _mapper.Map<List<GetCountry>>(countries);
+            return Ok(records);
         }
 
         // GET: api/Countries/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Country>> GetCountry(int id)
+        public async Task<ActionResult<GetCountryDetails>> GetCountry(int id)
         {
-            var country = await _context.Countries.FindAsync(id);
+            var country = await _context.Countries
+                .Include(q => q.Hotels)
+                .FirstOrDefaultAsync(q => q.Id == id);
+
 
             if (country == null)
             {
                 return NotFound();
             }
 
-            return Ok(country);
+            var record = _mapper.Map<GetCountryDetails>(country);
+
+            return Ok(record);
         }
 
         // PUT: api/Countries/5
@@ -77,8 +85,9 @@ namespace HotelListingAPI.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Country>> PostCountry(Country country)
+        public async Task<ActionResult<Country>> PostCountry(CreateCountry createCountry)
         {
+            var country = _mapper.Map<Country>(createCountry);
             _context.Countries.Add(country);
             await _context.SaveChangesAsync();
 

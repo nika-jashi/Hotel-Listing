@@ -23,3 +23,39 @@
 2023-04-13 15:02:25.584 +04:00 [INF] HTTP PUT /api/Countries/3 responded 400 in 56.3961 ms
 2023-04-13 15:02:38.445 +04:00 [INF] HTTP PUT /api/Countries/3 responded 204 in 151.9710 ms
 2023-04-13 15:02:46.109 +04:00 [INF] HTTP GET /api/Countries responded 200 in 60.5248 ms
+2023-04-13 17:19:57.751 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 17:19:57.791 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 17:19:57.793 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 17:19:57.795 +04:00 [INF] Hosting environment: Development
+2023-04-13 17:19:57.796 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 17:20:19.155 +04:00 [INF] HTTP POST /api/Countries responded 201 in 3907.7965 ms
+2023-04-13 17:20:29.915 +04:00 [INF] HTTP GET /api/Countries responded 200 in 272.7397 ms
+2023-04-13 18:10:40.435 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 18:10:40.472 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 18:10:40.475 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 18:10:40.476 +04:00 [INF] Hosting environment: Development
+2023-04-13 18:10:40.476 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 18:10:55.271 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4149.7650 ms
+2023-04-13 18:11:17.372 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 344.8170 ms
+2023-04-13 18:11:23.543 +04:00 [INF] HTTP GET /api/Countries/2 responded 200 in 110.1524 ms
+2023-04-13 18:11:27.756 +04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 15.1467 ms
+2023-04-13 18:11:32.330 +04:00 [INF] HTTP GET /api/Countries/3 responded 200 in 30.6741 ms
+2023-04-13 18:14:35.139 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 18:14:35.206 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 18:14:35.210 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 18:14:35.211 +04:00 [INF] Hosting environment: Development
+2023-04-13 18:14:35.212 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 18:14:47.648 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 18:14:47.691 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 18:14:47.694 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 18:14:47.695 +04:00 [INF] Hosting environment: Development
+2023-04-13 18:14:47.695 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 18:15:08.824 +04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 2514.3561 ms
+2023-04-13 18:15:13.248 +04:00 [INF] HTTP GET /api/Countries/2 responded 200 in 77.8509 ms
+2023-04-13 18:15:16.923 +04:00 [INF] HTTP GET /api/Countries/3 responded 200 in 61.1219 ms
+2023-04-13 18:17:17.146 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-13 18:17:17.432 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-13 18:17:17.436 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-13 18:17:17.437 +04:00 [INF] Hosting environment: Development
+2023-04-13 18:17:17.438 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-13 18:17:25.503 +04:00 [INF] HTTP GET /api/Countries/2 responded 200 in 2177.1754 ms
