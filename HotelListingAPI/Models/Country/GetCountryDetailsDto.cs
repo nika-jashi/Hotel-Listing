@@ -6,6 +6,6 @@ namespace HotelListingAPI.Models.Country
     {
         public int Id { get; set; }
 
-        public List<GetHotel> Hotels { get; set; }
+        public List<GetHotelDto> Hotels { get; set; }
     }
 }
