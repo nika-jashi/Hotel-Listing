@@ -321,3 +321,12 @@ HotelListingAPI.Data.Hotel -> System.Collections.Generic.List`1[[HotelListingAPI
 2023-04-18 16:28:42.685 +04:00 [INF] HTTP PUT /api/Hotels/4 responded 204 in 186.9473 ms
 2023-04-18 16:28:47.205 +04:00 [INF] HTTP GET /api/Hotels/4 responded 200 in 19.7202 ms
 2023-04-18 16:28:55.164 +04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 142.5599 ms
+2023-04-18 17:46:14.358 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-18 17:46:14.445 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-18 17:46:14.581 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-18 17:46:14.583 +04:00 [INF] Hosting environment: Development
+2023-04-18 17:46:14.584 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-18 17:46:29.526 +04:00 [INF] HTTP GET /api/Countries responded 200 in 3814.3335 ms
+2023-04-18 17:46:54.331 +04:00 [INF] HTTP POST /api/Hotels responded 201 in 341.6362 ms
+2023-04-18 17:47:07.424 +04:00 [INF] HTTP GET /api/Countries responded 200 in 22.0258 ms
+2023-04-18 17:47:14.392 +04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 368.0047 ms
