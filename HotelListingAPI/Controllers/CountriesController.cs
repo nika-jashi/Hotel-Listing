@@ -50,7 +50,6 @@ namespace HotelListingAPI.Controllers
         }
 
         // PUT: api/Countries/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryDto updateCountry)
         {
@@ -88,7 +87,6 @@ namespace HotelListingAPI.Controllers
         }
 
         // POST: api/Countries
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountry)
         {
