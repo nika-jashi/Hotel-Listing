@@ -1,0 +1,9 @@
+2023-04-21 14:26:40.527 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-21 14:26:40.581 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-21 14:26:40.583 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-21 14:26:40.585 +04:00 [INF] Hosting environment: Development
+2023-04-21 14:26:40.586 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-21 14:27:11.914 +04:00 [INF] HTTP POST /api/User/login responded 200 in 5097.3042 ms
+2023-04-21 14:28:30.977 +04:00 [INF] HTTP GET /api/Hotels responded 200 in 129.7457 ms
+2023-04-21 14:28:41.458 +04:00 [INF] HTTP GET /api/Hotels responded 401 in 11.5996 ms
+2023-04-21 14:28:51.617 +04:00 [INF] HTTP GET /api/Countries responded 200 in 43.7413 ms
