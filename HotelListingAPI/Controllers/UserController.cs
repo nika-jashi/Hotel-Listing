@@ -10,10 +10,12 @@ namespace HotelListingAPI.Controllers
     public class UserController : ControllerBase
     {
         private readonly IAuthManager _authManager;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IAuthManager authManager)
+        public UserController(IAuthManager authManager, ILogger<UserController> logger)
         {
             this._authManager = authManager;
+            this._logger = logger;
         }
         //api/User/registration
         [HttpPost]
@@ -23,16 +25,26 @@ namespace HotelListingAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Register([FromBody] UserDto userDto)
         {
-            var errors = await _authManager.Register(userDto);
-            if (errors.Any())
+            _logger.LogInformation($"Registration Attempt for {userDto.Email}");
+            try
             {
-                foreach (var error in errors)
+                var errors = await _authManager.Register(userDto);
+                if (errors.Any())
                 {
-                    ModelState.AddModelError(error.Code, error.Description);
+                    foreach (var error in errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+                    return BadRequest(ModelState);
                 }
-                return BadRequest(ModelState);
+                return Ok();
             }
-            return Ok();
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something Went Wrong in the {nameof(Register)} - User Registration attempt for {userDto.Email}");
+                return Problem($"Something Went Wrong In The {nameof(Register)}", statusCode: 500);
+            }
+            
         }
         //api/User/login
         [HttpPost]
@@ -42,12 +54,50 @@ namespace HotelListingAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Login([FromBody] LoginUserDto loginUserDto)
         {
-            var authResponse = await _authManager.Login(loginUserDto);
-            if (authResponse == null)
+            _logger.LogInformation($"Login Attempt for {loginUserDto.Email}");
+            try
             {
-                return Unauthorized();
+                var authResponse = await _authManager.Login(loginUserDto);
+                
+                if (authResponse == null)
+                {
+                    return Unauthorized();
+                }
+
+                return Ok(authResponse);
             }
-            return Ok(authResponse);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something Went Wrong in the {nameof(Login)} - User Login attempt for {loginUserDto.Email}");
+                return Problem($"Something Went Wrong In The {nameof(Login)}", statusCode: 500);
+            }
+
+        }
+        //api/User/refreshtoken
+        [HttpPost]
+        [Route("refreshtoken")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult> RefreshToken([FromBody] AuthResponseDto request)
+        {
+            try
+            {
+                var authResponse = await _authManager.VerifyRefreshToken(request);
+
+                if (authResponse == null)
+                {
+                    return Unauthorized();
+                }
+
+                return Ok(authResponse);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something Went Wrong in the {nameof(RefreshToken)}");
+                return Problem($"Something Went Wrong In The {nameof(RefreshToken)}", statusCode: 500);
+            }
+
         }
     }
 }

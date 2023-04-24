@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListingAPI.Data;
 using HotelListingAPI.Contracts;
@@ -15,7 +10,6 @@ namespace HotelListingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class HotelsController : ControllerBase
     {
         private readonly IMapper _mapper;
@@ -51,6 +45,7 @@ namespace HotelListingAPI.Controllers
 
         // PUT: api/Hotels/5
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutHotel(int id, GetHotelDto updateHotel)
         {
             if (id != updateHotel.Id)
@@ -87,6 +82,7 @@ namespace HotelListingAPI.Controllers
 
         // POST: api/Hotels
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Hotel>> PostHotel(CreateHotelDto createHotel)
         {
             var hotel = _mapper.Map<Hotel>(createHotel);
@@ -97,6 +93,7 @@ namespace HotelListingAPI.Controllers
 
         // DELETE: api/Hotels/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteHotel(int id)
         {
             var hotel = await _hotelsRepository.GetAsync(id);
