@@ -1,15 +1,14 @@
-﻿using HotelListingAPI.Contracts;
+﻿using AutoMapper;
+using HotelListingAPI.Contracts;
 using HotelListingAPI.Data;
+using HotelListingAPI.Models;
 
 namespace HotelListingAPI.Repository
 {
     public class HotelsRepository : GenericRepository<Hotel>, IHotelsRepository
     {
-        private readonly HotelListingDbContext _context;
-        public HotelsRepository(HotelListingDbContext context) : base(context)
+        public HotelsRepository(HotelListingDbContext context, IMapper mapper) : base(context, mapper)
         {
-            this._context = context;
         }
-
     }
 }

@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System.Text;
 using HotelListingAPI.Middleware;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace HotelListingAPI
 {
@@ -44,6 +46,25 @@ namespace HotelListingAPI
                         .AllowAnyOrigin()
                         .AllowAnyMethod());
             });
+
+            builder.Services.AddApiVersioning(
+                options => {
+                    options.AssumeDefaultVersionWhenUnspecified = true;
+                    options.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
+                    options.ReportApiVersions = true;
+                    options.ApiVersionReader = ApiVersionReader.Combine(
+                            new QueryStringApiVersionReader("api-version"),
+                            new HeaderApiVersionReader("x-version"),
+                            new MediaTypeApiVersionReader("ver")
+                        );
+                });
+
+            builder.Services.AddVersionedApiExplorer(
+                options =>
+                {
+                    options.GroupNameFormat = "'v'VVV";
+                    options.SubstituteApiVersionInUrl = true;
+                });
 
             builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 
