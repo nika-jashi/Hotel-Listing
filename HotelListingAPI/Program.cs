@@ -1,7 +1,7 @@
 using Microsoft.IdentityModel.Tokens;
 using HotelListingAPI.Configurations;
 using HotelListingAPI.Contracts;
-using HotelListingAPI.Data;
+using HotelListingAPIData;
 using HotelListingAPI.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +11,7 @@ using System.Text;
 using HotelListingAPI.Middleware;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.OData;
 
 namespace HotelListingAPI
 {
@@ -34,7 +35,11 @@ namespace HotelListingAPI
                 .AddEntityFrameworkStores<HotelListingDbContext>()
                 .AddDefaultTokenProviders();
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddOData(options =>
+            {
+                options.Select().Filter().OrderBy();
+            });
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -93,6 +98,8 @@ namespace HotelListingAPI
                         Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"]
                         ))};
             });
+
+
 
             var app = builder.Build();
 

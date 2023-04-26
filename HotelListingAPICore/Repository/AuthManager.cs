@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using HotelListingAPI.Contracts;
-using HotelListingAPI.Data;
+using HotelListingAPIData;
 using HotelListingAPI.Models.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace HotelListingAPI.Repository
 {

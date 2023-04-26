@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using HotelListingAPI.Data;
+using HotelListingAPIData;
 using HotelListingAPI.Models.Country;
 using AutoMapper;
 using HotelListingAPI.Contracts;
 using Microsoft.AspNetCore.Authorization;
-using HotelListingAPI.Models.User;
-using Microsoft.Win32;
 using HotelListingAPI.Models;
+using Microsoft.AspNetCore.OData.Query;
 
 namespace HotelListingAPI.Controllers
 {
@@ -26,15 +25,17 @@ namespace HotelListingAPI.Controllers
             this._logger = logger;
         }
 
-        [HttpGet("GetAll")]
+        [HttpGet]
+        [EnableQuery]
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
-            var countries = await _countriesRepository.GetAllAsync<GetCountryDto>();
-            return Ok(countries);
+            var countries = await _countriesRepository.GetAllAsync();
+            var records = _mapper.Map<List<GetCountryDto>>(countries);
+            return Ok(records);
         }
 
         // GET: api/Countries?StartIndex=0&pagesize=25&PageNumber=1
-        [HttpGet]
+        [HttpGet("GetPaged")]
         public async Task<ActionResult<PagedResult<GetCountryDto>>> GetPagedCountries([FromQuery] QueryParameters queryParameters)
         {
             var pagedCountriesResult = await _countriesRepository.GetAllAsync<GetCountryDto>(queryParameters);

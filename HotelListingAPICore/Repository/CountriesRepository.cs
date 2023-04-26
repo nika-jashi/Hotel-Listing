@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using HotelListingAPI.Contracts;
-using HotelListingAPI.Data;
+using HotelListingAPIData;
 using Microsoft.EntityFrameworkCore;
 
 namespace HotelListingAPI.Repository

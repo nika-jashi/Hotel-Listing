@@ -1,0 +1,257 @@
+2023-04-26 10:54:02.522 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 10:54:02.584 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 10:54:02.586 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 10:54:02.587 +04:00 [INF] Hosting environment: Development
+2023-04-26 10:54:02.587 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 10:54:09.809 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.HotelsController.GetPagedHotels (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-26 10:56:11.483 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 10:56:11.528 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 10:56:11.530 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 10:56:11.531 +04:00 [INF] Hosting environment: Development
+2023-04-26 10:56:11.532 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 10:56:13.792 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.HotelsController.GetPagedHotels (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-26 10:57:21.981 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 10:57:22.026 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 10:57:22.028 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 10:57:22.029 +04:00 [INF] Hosting environment: Development
+2023-04-26 10:57:22.030 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 10:57:24.407 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.HotelsController.GetPagedHotels (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-26 10:57:39.845 +04:00 [INF] HTTP GET / responded 404 in 115.0393 ms
+2023-04-26 10:57:49.566 +04:00 [INF] HTTP GET /Countrries responded 404 in 1.1879 ms
+2023-04-26 10:57:54.077 +04:00 [INF] HTTP GET /Countries responded 404 in 2.8757 ms
+2023-04-26 10:58:05.958 +04:00 [INF] HTTP GET /Countries/GetAll/ responded 404 in 0.1874 ms
+2023-04-26 10:58:09.065 +04:00 [INF] HTTP GET /Countries/GetAll responded 404 in 0.0728 ms
+2023-04-26 10:58:29.699 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-26 10:58:29.701 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-26 10:58:29.775 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4502.1102 ms
+2023-04-26 10:58:40.294 +04:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 118.3773 ms
+2023-04-26 10:59:20.145 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 10:59:20.446 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 10:59:20.448 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 10:59:20.450 +04:00 [INF] Hosting environment: Development
+2023-04-26 10:59:20.451 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 10:59:22.477 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.HotelsController.GetPagedHotels (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-26 10:59:34.818 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.HotelsController.GetPagedHotels (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-26 10:59:35.134 +04:00 [INF] HTTP GET /favicon.ico responded 404 in 72.5627 ms
+2023-04-26 11:01:25.735 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:01:25.781 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:01:25.784 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:01:25.785 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:01:25.786 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:04:03.989 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:04:04.027 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:04:04.029 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:04:04.030 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:04:04.030 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:06:00.922 +04:00 [INF] HTTP GET /api/Countries/GetAll responded 400 in 1458.3866 ms
+2023-04-26 11:06:22.564 +04:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 2983.3784 ms
+2023-04-26 11:07:00.832 +04:00 [INF] HTTP GET /api/Countries/GetAll responded 400 in 19.9015 ms
+2023-04-26 11:09:00.281 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:09:00.334 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:09:00.336 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:09:00.345 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:09:00.346 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:09:07.626 +04:00 [INF] HTTP GET /api/Countries/GetAll responded 400 in 1183.7547 ms
+2023-04-26 11:11:35.465 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:11:35.546 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:11:35.548 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:11:35.549 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:11:35.549 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:11:47.330 +04:00 [INF] HTTP GET /api/Countries/GetAll responded 400 in 518.7916 ms
+2023-04-26 11:11:56.640 +04:00 [INF] HTTP GET /api/Countries responded 400 in 728.7439 ms
+2023-04-26 11:12:42.637 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:12:42.675 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:12:42.679 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:12:42.680 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:12:42.681 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:12:51.202 +04:00 [INF] HTTP GET /api/Countries responded 400 in 1197.3380 ms
+2023-04-26 11:25:47.036 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:25:47.082 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:25:47.085 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:25:47.087 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:25:47.088 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:26:06.569 +04:00 [ERR] HTTP GET /api/Countries responded 500 in 4332.6039 ms
+System.ArgumentException: Object of type 'System.Linq.EnumerableQuery`1[HotelListingAPI.Data.Country]' cannot be converted to type 'System.Linq.IQueryable`1[HotelListingAPI.Models.Country.GetCountryDto]'.
+   at System.RuntimeType.CheckValue(Object& value, ParameterCopyBackAction& copyBack, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Span`1 copyOfParameters, IntPtr* byrefParameters, Span`1 shouldCopyBack, ReadOnlySpan`1 parameters, RuntimeType[] sigTypes, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Microsoft.AspNetCore.OData.Query.Expressions.BinderExtensions.ApplyBind(ISelectExpandBinder binder, IQueryable source, SelectExpandClause selectExpandClause, QueryBinderContext context)
+   at Microsoft.AspNetCore.OData.Query.SelectExpandQueryOption.ApplyTo(IQueryable queryable, ODataQuerySettings settings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplySelectExpand[T](T entity, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplyTo(IQueryable query, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ApplyQuery(IQueryable queryable, ODataQueryOptions queryOptions)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ExecuteQuery(Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext, Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-26 11:26:06.901 +04:00 [ERR] Something Went Wrong While Processing /api/Countries
+System.ArgumentException: Object of type 'System.Linq.EnumerableQuery`1[HotelListingAPI.Data.Country]' cannot be converted to type 'System.Linq.IQueryable`1[HotelListingAPI.Models.Country.GetCountryDto]'.
+   at System.RuntimeType.CheckValue(Object& value, ParameterCopyBackAction& copyBack, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Span`1 copyOfParameters, IntPtr* byrefParameters, Span`1 shouldCopyBack, ReadOnlySpan`1 parameters, RuntimeType[] sigTypes, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Microsoft.AspNetCore.OData.Query.Expressions.BinderExtensions.ApplyBind(ISelectExpandBinder binder, IQueryable source, SelectExpandClause selectExpandClause, QueryBinderContext context)
+   at Microsoft.AspNetCore.OData.Query.SelectExpandQueryOption.ApplyTo(IQueryable queryable, ODataQuerySettings settings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplySelectExpand[T](T entity, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplyTo(IQueryable query, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ApplyQuery(IQueryable queryable, ODataQueryOptions queryOptions)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ExecuteQuery(Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext, Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI\Middleware\ExceptionMiddleware.cs:line 22
+2023-04-26 11:26:32.681 +04:00 [ERR] HTTP GET /api/Countries responded 500 in 64.7645 ms
+System.ArgumentException: Object of type 'System.Linq.EnumerableQuery`1[HotelListingAPI.Data.Country]' cannot be converted to type 'System.Linq.IQueryable`1[HotelListingAPI.Models.Country.GetCountryDto]'.
+   at System.RuntimeType.CheckValue(Object& value, ParameterCopyBackAction& copyBack, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Span`1 copyOfParameters, IntPtr* byrefParameters, Span`1 shouldCopyBack, ReadOnlySpan`1 parameters, RuntimeType[] sigTypes, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Microsoft.AspNetCore.OData.Query.Expressions.BinderExtensions.ApplyBind(ISelectExpandBinder binder, IQueryable source, SelectExpandClause selectExpandClause, QueryBinderContext context)
+   at Microsoft.AspNetCore.OData.Query.SelectExpandQueryOption.ApplyTo(IQueryable queryable, ODataQuerySettings settings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplySelectExpand[T](T entity, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplyTo(IQueryable query, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ApplyQuery(IQueryable queryable, ODataQueryOptions queryOptions)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ExecuteQuery(Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext, Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-26 11:26:32.774 +04:00 [ERR] Something Went Wrong While Processing /api/Countries
+System.ArgumentException: Object of type 'System.Linq.EnumerableQuery`1[HotelListingAPI.Data.Country]' cannot be converted to type 'System.Linq.IQueryable`1[HotelListingAPI.Models.Country.GetCountryDto]'.
+   at System.RuntimeType.CheckValue(Object& value, ParameterCopyBackAction& copyBack, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Span`1 copyOfParameters, IntPtr* byrefParameters, Span`1 shouldCopyBack, ReadOnlySpan`1 parameters, RuntimeType[] sigTypes, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Microsoft.AspNetCore.OData.Query.Expressions.BinderExtensions.ApplyBind(ISelectExpandBinder binder, IQueryable source, SelectExpandClause selectExpandClause, QueryBinderContext context)
+   at Microsoft.AspNetCore.OData.Query.SelectExpandQueryOption.ApplyTo(IQueryable queryable, ODataQuerySettings settings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplySelectExpand[T](T entity, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions.ApplyTo(IQueryable query, ODataQuerySettings querySettings)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ApplyQuery(IQueryable queryable, ODataQueryOptions queryOptions)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.ExecuteQuery(Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext, Object responseValue, IQueryable singleResultCollection, ControllerActionDescriptor actionDescriptor, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI\Middleware\ExceptionMiddleware.cs:line 22
+2023-04-26 11:29:26.632 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:29:26.688 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:29:26.690 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:29:26.691 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:29:26.692 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:29:47.813 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-26 11:29:47.818 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-26 11:29:47.912 +04:00 [INF] HTTP GET /api/Countries/GetPaged responded 200 in 2162.5333 ms
+2023-04-26 11:31:04.278 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 11:31:04.327 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 11:31:04.346 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 11:31:04.349 +04:00 [INF] Hosting environment: Development
+2023-04-26 11:31:04.350 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 11:31:10.080 +04:00 [INF] HTTP GET /api/Countries responded 200 in 2694.2744 ms
+2023-04-26 17:21:10.470 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 17:21:10.561 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 17:21:10.565 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 17:21:10.570 +04:00 [INF] Hosting environment: Development
+2023-04-26 17:21:10.575 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 17:21:25.556 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4325.9046 ms
+2023-04-26 17:21:48.027 +04:00 [INF] HTTP POST /api/Countries responded 401 in 14.8115 ms
+2023-04-26 17:22:15.454 +04:00 [INF] HTTP POST /api/Countries responded 401 in 156.1043 ms
+2023-04-26 17:22:36.680 +04:00 [INF] Login Attempt for user@example.com
+2023-04-26 17:22:37.485 +04:00 [INF] HTTP POST /api/User/login responded 200 in 862.0899 ms
+2023-04-26 17:22:46.710 +04:00 [INF] HTTP POST /api/Countries responded 201 in 114.0426 ms
+2023-04-26 17:22:52.324 +04:00 [INF] HTTP GET /api/Countries responded 200 in 10.5802 ms
+2023-04-26 17:23:14.010 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-26 17:23:14.011 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-26 17:23:14.036 +04:00 [INF] HTTP GET /api/Hotels responded 200 in 112.2415 ms
+2023-04-26 17:23:32.184 +04:00 [INF] HTTP GET /api/Countries responded 200 in 9.7253 ms
+2023-04-26 17:24:02.070 +04:00 [INF] HTTP POST /api/Hotels responded 201 in 44.6548 ms
+2023-04-26 17:24:14.691 +04:00 [INF] HTTP GET /api/Countries/9 responded 200 in 90.4518 ms
+2023-04-26 17:33:49.416 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-26 17:33:49.454 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-26 17:33:49.456 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 17:33:49.457 +04:00 [INF] Hosting environment: Development
+2023-04-26 17:33:49.458 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-26 17:34:01.061 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4268.6590 ms
+2023-04-26 17:34:13.481 +04:00 [INF] Login Attempt for user@example.com
+2023-04-26 17:34:14.233 +04:00 [INF] HTTP POST /api/User/login responded 200 in 810.8087 ms
+2023-04-26 17:34:28.467 +04:00 [INF] HTTP GET /api/Countries/9 responded 200 in 176.2302 ms
+2023-04-26 17:34:36.822 +04:00 [INF] HTTP GET /api/Hotels/3 responded 200 in 17.1626 ms
+2023-04-26 17:35:15.367 +04:00 [INF] HTTP PUT /api/Hotels/3 responded 204 in 45.9152 ms
+2023-04-26 17:35:21.703 +04:00 [INF] HTTP GET /api/Hotels/3 responded 200 in 21.3058 ms

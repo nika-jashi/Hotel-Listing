@@ -1,8 +1,8 @@
-﻿using HotelListingAPI.Data.Configurations;
+﻿using HotelListingAPIData.Configurations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Data
+namespace HotelListingAPIData
 {
     public class HotelListingDbContext : IdentityDbContext<User>
     {

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using HotelListingAPI.Contracts;
-using HotelListingAPI.Data;
+using HotelListingAPIData;
 using HotelListingAPI.Models;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace HotelListingAPI.Repository
 {
