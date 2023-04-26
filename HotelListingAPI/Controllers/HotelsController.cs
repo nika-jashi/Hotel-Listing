@@ -24,15 +24,15 @@ namespace HotelListingAPI.Controllers
         }
 
         // GET: api/Hotels
-        [HttpGet("GetAll")]
+        [HttpGet]
         [EnableQuery]
         public async Task<ActionResult<IEnumerable<GetHotelDto>>> GetHotels()
         {
-            var hotel = await _hotelsRepository.GetAllAsync();
+            var hotel = await _hotelsRepository.GetAllAsync<GetHotelDto>();
             return Ok(_mapper.Map<List<GetHotelDto>>(hotel));
         }
-
-        [HttpGet]
+        // GET: api/Hotels?StartIndex=0&pagesize=25&PageNumber=1
+        [HttpGet("GetPaged")]
         public async Task<ActionResult<PagedResult<GetHotelDto>>> GetPagedHotels([FromQuery] QueryParameters queryParameters)
         {
             var pagedHotels = await _hotelsRepository.GetAllAsync<GetHotelDto>(queryParameters);
@@ -58,22 +58,9 @@ namespace HotelListingAPI.Controllers
         [Authorize]
         public async Task<IActionResult> PutHotel(int id, GetHotelDto updateHotel)
         {
-            if (id != updateHotel.Id)
-            {
-                return BadRequest("Invalid Record Id");
-            }
-
-            //_context.Entry(hotel).State = EntityState.Modified;
-            var hotel = await _hotelsRepository.GetAsync(id);
-            if (hotel == null)
-            {
-                return NotFound();
-            }
-            _mapper.Map(updateHotel,hotel);
-
             try
             {
-                await _hotelsRepository.UpdateAsync(hotel);
+                await _hotelsRepository.UpdateAsync(id, updateHotel);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -95,10 +82,8 @@ namespace HotelListingAPI.Controllers
         [Authorize]
         public async Task<ActionResult<Hotel>> PostHotel(CreateHotelDto createHotel)
         {
-            var hotel = _mapper.Map<Hotel>(createHotel);
-            await _hotelsRepository.AddAsync(hotel);
-
-            return CreatedAtAction("GetHotel", new { id = hotel.Id }, hotel);
+            var hotel = await _hotelsRepository.AddAsync<CreateHotelDto, GetHotelDto>(createHotel);
+            return CreatedAtAction(nameof(GetHotel), new { id = hotel.Id }, hotel);
         }
 
         // DELETE: api/Hotels/5

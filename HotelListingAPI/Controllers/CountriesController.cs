@@ -7,6 +7,7 @@ using HotelListingAPI.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using HotelListingAPI.Models;
 using Microsoft.AspNetCore.OData.Query;
+using HotelListingAPICore.Models.Country;
 
 namespace HotelListingAPI.Controllers
 {
@@ -29,7 +30,7 @@ namespace HotelListingAPI.Controllers
         [EnableQuery]
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
-            var countries = await _countriesRepository.GetAllAsync();
+            var countries = await _countriesRepository.GetAllAsync<GetCountryDto>();
             var records = _mapper.Map<List<GetCountryDto>>(countries);
             return Ok(records);
         }
@@ -63,23 +64,9 @@ namespace HotelListingAPI.Controllers
         [Authorize]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryDto updateCountry)
         {
-            if (id != updateCountry.Id)
-            {
-                return BadRequest("Invalid Record Id");
-            }
-
-            //_context.Entry(updateCountry).State = EntityState.Modified;
-            var country = await _countriesRepository.GetAsync(id);
-            if (country == null)
-            {
-                return NotFound();
-            }
-            
-            _mapper.Map(updateCountry,country);
-
             try
             {
-                await _countriesRepository.UpdateAsync(country);
+                await _countriesRepository.UpdateAsync(id, updateCountry);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -101,10 +88,8 @@ namespace HotelListingAPI.Controllers
         [Authorize]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountry)
         {
-            var country = _mapper.Map<Country>(createCountry);
-            await _countriesRepository.AddAsync(country);
-
-            return CreatedAtAction("GetCountry", new { id = country.Id }, country);
+            var country = await _countriesRepository.AddAsync<CreateCountryDto, GetCountryDto>(createCountry);
+            return CreatedAtAction(nameof(GetCountry), new { id = country.Id }, country);
         }
 
         // DELETE: api/Countries/5

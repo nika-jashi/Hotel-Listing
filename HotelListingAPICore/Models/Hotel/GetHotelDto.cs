@@ -1,9 +1,10 @@
-﻿namespace HotelListingAPI.Models.Hotel
+﻿using HotelListingAPICore.Models;
+
+namespace HotelListingAPI.Models.Hotel
 {
-    public class GetHotelDto : BaseHotelDto
+    public class GetHotelDto : BaseHotelDto, IBaseDto
     {
         public int Id { get; set; }
 
-        public int CountryId { get; set; }
     }
 }
