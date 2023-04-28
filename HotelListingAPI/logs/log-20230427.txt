@@ -1,0 +1,43 @@
+2023-04-27 16:54:15.091 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-27 16:54:15.136 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-27 16:54:15.138 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-27 16:54:15.139 +04:00 [INF] Hosting environment: Development
+2023-04-27 16:54:15.140 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-27 16:54:31.237 +04:00 [INF] Login Attempt for user@example.com
+2023-04-27 16:54:36.600 +04:00 [INF] HTTP POST /api/User/login responded 200 in 5939.5327 ms
+2023-04-27 16:54:53.244 +04:00 [INF] HTTP POST /api/Countries responded 401 in 10.5033 ms
+2023-04-27 18:09:52.856 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-27 18:09:52.903 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-27 18:09:52.906 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-27 18:09:52.907 +04:00 [INF] Hosting environment: Development
+2023-04-27 18:09:52.907 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-27 18:10:07.958 +04:00 [INF] Login Attempt for user@example.com
+2023-04-27 18:10:12.429 +04:00 [INF] HTTP POST /api/User/login responded 200 in 5131.6087 ms
+2023-04-27 18:10:44.104 +04:00 [INF] HTTP POST /api/Countries responded 401 in 12.8242 ms
+2023-04-27 18:11:04.929 +04:00 [INF] HTTP POST /api/Countries responded 401 in 15.3690 ms
+2023-04-27 18:11:19.708 +04:00 [INF] HTTP POST /api/Countries responded 401 in 2.5220 ms
+2023-04-27 18:12:50.894 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-27 18:12:51.513 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-27 18:12:51.524 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-27 18:12:51.533 +04:00 [INF] Hosting environment: Development
+2023-04-27 18:12:51.534 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-27 18:13:07.824 +04:00 [INF] HTTP POST /api/Countries responded 401 in 112.4990 ms
+2023-04-27 18:14:01.126 +04:00 [INF] HTTP POST /api/Hotels responded 401 in 5.8265 ms
+2023-04-27 18:14:38.690 +04:00 [INF] HTTP POST /api/Countries responded 401 in 9.9610 ms
+2023-04-27 18:14:55.426 +04:00 [INF] Login Attempt for user@example.com
+2023-04-27 18:14:57.694 +04:00 [INF] HTTP POST /api/User/login responded 200 in 2725.9109 ms
+2023-04-27 18:16:18.194 +04:00 [INF] HTTP POST /api/Countries responded 401 in 1.0252 ms
+2023-04-27 18:16:45.090 +04:00 [INF] HTTP POST /api/Countries responded 401 in 0.1455 ms
+2023-04-27 18:16:49.482 +04:00 [INF] HTTP POST /api/Countries responded 401 in 0.1106 ms
+2023-04-27 18:17:36.386 +04:00 [INF] Login Attempt for user@example.com
+2023-04-27 18:17:36.554 +04:00 [INF] HTTP POST /api/User/login responded 200 in 171.5995 ms
+2023-04-27 18:17:40.731 +04:00 [INF] Login Attempt for user@example.com
+2023-04-27 18:17:40.849 +04:00 [INF] HTTP POST /api/User/login responded 200 in 131.4692 ms
+2023-04-27 18:26:20.691 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-27 18:26:20.765 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-27 18:26:20.770 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-27 18:26:20.772 +04:00 [INF] Hosting environment: Development
+2023-04-27 18:26:20.773 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-27 18:26:33.747 +04:00 [INF] Login Attempt for user@example.com
+2023-04-27 18:26:37.373 +04:00 [INF] HTTP POST /api/User/login responded 200 in 4050.4538 ms
+2023-04-27 18:26:55.959 +04:00 [INF] HTTP POST /api/Countries responded 201 in 246.5929 ms

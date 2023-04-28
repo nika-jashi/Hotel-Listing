@@ -1,0 +1,10 @@
+2023-04-28 12:04:33.819 +04:00 [INF] Now listening on: https://localhost:7002
+2023-04-28 12:04:33.882 +04:00 [INF] Now listening on: http://localhost:5050
+2023-04-28 12:04:33.887 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 12:04:33.888 +04:00 [INF] Hosting environment: Development
+2023-04-28 12:04:33.891 +04:00 [INF] Content root path: C:\Users\njashi\source\repos\HotelListingAPI\HotelListingAPI
+2023-04-28 12:04:57.297 +04:00 [INF] HTTP GET /healthcheck responded 404 in 109.9601 ms
+2023-04-28 12:05:23.348 +04:00 [INF] HTTP GET /customhealthcheck responded 200 in 69.3345 ms
+2023-04-28 12:05:23.385 +04:00 [INF] HTTP GET /favicon.ico responded 404 in 2.8574 ms
+2023-04-28 12:05:34.675 +04:00 [INF] HTTP GET /generalhealthcheck responded 200 in 2137.6560 ms
+2023-04-28 12:05:43.835 +04:00 [INF] HTTP GET /databasehealthcheck responded 200 in 4.4774 ms
