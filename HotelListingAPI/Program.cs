@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.OData;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Text.Json;
+using HotelListingAPICore.Contracts;
+using HotelListingAPICore.Repository;
 
 namespace HotelListingAPI
 {
@@ -118,6 +120,7 @@ namespace HotelListingAPI
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
             builder.Services.AddScoped<IHotelsRepository, HotelsRepository>();
+            builder.Services.AddScoped<IReviewRepository,ReviewRepository>();
             builder.Services.AddScoped<IAuthManager,AuthManager>();
 
             builder.Services.AddAuthentication(options =>
